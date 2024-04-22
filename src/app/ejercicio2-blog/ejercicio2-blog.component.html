@@ -1,0 +1,10 @@
+<h1>Ejercicio 2</h1>
+
+<h2>Blog</h2>
+
+@for (articulo of articulos; track articulo) {
+    <div>
+        <h3><a [routerLink]="['/ejercicio2-articulo', articulo.id]">{{articulo.titulo}}</a></h3>
+        <p>{{articulo.descripcion}}</p>
+    </div>
+}
